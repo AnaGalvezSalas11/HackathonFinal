@@ -21,9 +21,12 @@ class FilterMarker extends Component{
             markerTextile: [],
             objectsToEliminate1: [],
             
+            
 
             
         }
+
+        console.log(this.markerGlass)
         this.showGlassMarker=this.showGlassMarker.bind(this);
         this.showPaperboardMarker=this.showPaperboardMarker.bind(this);
         this.showPlasticsMarker=this.showPlasticsMarker.bind(this);
@@ -177,6 +180,7 @@ class FilterMarker extends Component{
                         )})                
         }
 
+        
     showGlassMarker() {
         this.map.removeObjects(this.state.objectsToEliminate1)
         let tempArray = []
@@ -195,7 +199,7 @@ class FilterMarker extends Component{
   
     }
 
-    
+
 
     showPaperboardMarker() {
             this.map.removeObjects(this.state.objectsToEliminate1)
@@ -273,7 +277,7 @@ class FilterMarker extends Component{
     update(info){
         this.props.update(info);
     }
-
+    
 shouldComponentUpdate(props, state) {
     this.changeTheme(props.image, props.style);
     return false;
