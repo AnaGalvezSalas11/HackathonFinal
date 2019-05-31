@@ -1,4 +1,4 @@
-Tecnologias utilizadas:
+Tecnologías utilizadas:
 
 * React
 * Mapas (Here)
